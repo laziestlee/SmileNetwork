@@ -37,14 +37,6 @@ extension MockEndpoint: SmileEndpoint {
     }
 }
 
-struct Mine: Codable {
-    let name: String
-
-    enum CodingKeys: String, CodingKey {
-        case name
-    }
-}
-
 protocol WeatherServiceAble {
     func requestWeather(cityId: String) async -> Result<WeatherResponse, SmileNetworkError>
 }
