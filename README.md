@@ -52,12 +52,12 @@ let api = WeatherService()
 Task {
     let resut = await api.requestWeather(cityId: "101030100")
     switch resut {
-        case let .success(text):
-            let city = "城市： \(text.cityInfo.city)\n"
-            let shidu = "湿度： \(text.data.shidu)\n"
-            let pm25 = "PM2.5： \(text.data.pm25)\n"
-            let pm10 = "PM10： \(text.data.pm10)\n"
-            let wendu = "温度： \(text.data.wendu)°C\n"
+        case let .success(data):
+            let city = "城市： \(data.cityInfo.city)\n"
+            let shidu = "湿度： \(data.data.shidu)\n"
+            let pm25 = "PM2.5： \(data.data.pm25)\n"
+            let pm10 = "PM10： \(data.data.pm10)\n"
+            let wendu = "温度： \(data.data.wendu)°C\n"
             label.text = city + shidu + pm25 + pm10 + wendu
         case let .failure(error):
             label.text = error.localizedDescription
