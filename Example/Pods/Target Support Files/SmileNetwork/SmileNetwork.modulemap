@@ -1,0 +1,6 @@
+framework module SmileNetwork {
+  umbrella header "SmileNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

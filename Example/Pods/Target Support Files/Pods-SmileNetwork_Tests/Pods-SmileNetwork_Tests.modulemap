@@ -1,0 +1,6 @@
+framework module Pods_SmileNetwork_Tests {
+  umbrella header "Pods-SmileNetwork_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

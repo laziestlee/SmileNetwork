@@ -1,0 +1,16 @@
+PODS:
+  - SmileNetwork (0.0.1)
+
+DEPENDENCIES:
+  - SmileNetwork (from `../`)
+
+EXTERNAL SOURCES:
+  SmileNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SmileNetwork: 21d52e54902df5506a9d8d39581eff44c18efc78
+
+PODFILE CHECKSUM: 220442858c2b66c3d06ab8b286f1dd7996834354
+
+COCOAPODS: 1.11.3
